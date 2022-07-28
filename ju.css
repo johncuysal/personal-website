@@ -1,0 +1,207 @@
+/* Get the font and style the body element */
+
+@font-face {
+  font-family: Liberation Sans;
+  src: url(LiberationSans-Regular.ttf);
+}
+
+body {
+  margin: 0px;
+  font-family: Liberation Sans;
+  background-color: black;
+}
+
+/* Style the header, footer, and navbar */
+
+footer {
+  height: 100px;
+}
+
+header, footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#navbar {
+  width: 832px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Style the home-icon and its container */
+
+#home-icon-container {
+  width: 156px;
+  display: flex;
+  align-items: center;
+}
+
+#home-icon {
+  color: white;
+  height: 52px;
+  padding-left: 16px;
+}
+
+/* Style the nav and all its nav-links */
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  padding: 0 16px 0 16px;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+
+  /* Prevent nav-link text from being highlighted */
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#projects-nav-link:hover {
+  background-color: rgb(0, 50, 30);
+}
+
+#projects-nav-link.selected {
+  background-color: rgb(0, 120, 72);
+}
+
+#gallery-nav-link:hover {
+  background-color: rgb(0, 32, 47);
+}
+
+#gallery-nav-link.selected {
+  background-color: rgb(0, 96, 140);
+}
+
+#about-nav-link:hover {
+  background-color: rgb(59, 0, 26);
+}
+
+#about-nav-link.selected {
+  background-color: rgb(140, 0, 60);
+}
+
+#contact-nav-link:hover {
+  background-color: rgb(46, 33, 0);
+}
+
+#contact-nav-link.selected {
+  background-color: rgb(140, 100, 0);
+}
+
+/* Style the external links and their container */
+
+#external-link-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.external-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  color: white;
+}
+
+.external-link:hover {
+  color: gray;
+}
+
+/* Style the main element and content-container */
+
+main {
+  background-color: white;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+}
+
+#content-container {
+  width: 800px;
+  padding: 16px 16px 0 16px;
+}
+
+/* Style text elements */
+
+h1 {
+  font-size: 36px;
+  margin: 0.5em 0 0.5em 0;
+}
+
+h2 {
+  margin: 0.7em 0 0.7em 0;
+}
+
+h2 {
+  color: #5a5a5a;
+}
+
+p {
+  color: #5a5a5a;
+  font-size: 18px;
+  line-height: 1.61803;
+}
+
+/* Center-align any text with this class */
+
+.centered {
+  text-align: center;
+}
+
+/* Define a color palette */
+
+.accent1 {
+  color: rgb(0, 120, 72);
+}
+
+.accent2 {
+  color: rgb(0, 96, 140);
+}
+
+.accent3 {
+  color: rgb(140, 0, 60);
+}
+
+.accent4 {
+  color: rgb(140, 100, 0);
+}
+
+/* Adjust styles for smaller screens */
+
+@media only screen and (max-width: 660px) {
+  #navbar {
+    flex-direction: column;
+  }
+
+  #home-icon-container {
+    margin: 16px 0 16px 0;
+    justify-content: center;
+  }
+
+  #home-icon {
+    padding-left: 0px;
+  }
+
+  .nav-link {
+    height: 32px;
+  }
+}

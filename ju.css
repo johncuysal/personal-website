@@ -54,7 +54,7 @@ nav {
   justify-content: center;
 }
 
-.nav-link {
+.nav-link, .nav-link:hover {
   font-size: 18px;
   text-decoration: none;
   color: white;
@@ -125,11 +125,10 @@ nav {
   color: gray;
 }
 
-/* Style the main element and content-container */
+/* Style the main element, content-container, and page-title */
 
 main {
   background-color: white;
-  color: black;
 
   display: flex;
   justify-content: center;
@@ -137,7 +136,11 @@ main {
 
 #content-container {
   width: 800px;
-  padding: 16px 16px 0 16px;
+  padding: 16px 16px 16px 16px;
+}
+
+#page-title {
+  margin-bottom: 32px;
 }
 
 /* Style text elements */
@@ -148,20 +151,36 @@ h1 {
 }
 
 h2 {
-  margin: 0.7em 0 0.7em 0;
-}
-
-h2 {
+  font-size: 24px;
+  margin: 0.8em 0 0.8em 0;
   color: #5a5a5a;
 }
 
 p {
   color: #5a5a5a;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.61803;
+  margin: 0.9em 0 0.9em 0;
 }
 
-/* Center-align any text with this class */
+a {
+  color: rgb(0, 137, 201);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(0, 111, 163);
+  text-decoration: underline;
+}
+
+.under-construction-notice {
+  color: white;
+  background-color: goldenrod;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 16px;
+}
 
 .centered {
   text-align: center;
@@ -185,6 +204,48 @@ p {
   color: rgb(140, 100, 0);
 }
 
+/* Style elements on the project page */
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 16px;
+  text-decoration: none;
+}
+
+a.project {
+  width: 248px;
+  height: 248px;
+  background-color: thistle;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  border: solid 4px rgb(0, 120, 72);
+  text-decoration: inherit; /* Inherits text-decoration from .projects-container parent to override the a element default underline */
+}
+
+.project-title-container {
+  background: linear-gradient(rgba(0, 0, 0, 0), black);
+  width: 100%;
+  line-height: 48px;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 8px;
+  color: white;
+}
+
+.project:hover .project-title-container {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 120, 72));
+}
+
+/* Provide background images for projects */
+
+#project-cc2022 {
+  background-image: url(project-cc2022.png);
+}
+
 /* Adjust styles for smaller screens */
 
 @media only screen and (max-width: 660px) {
@@ -201,7 +262,7 @@ p {
     padding-left: 0px;
   }
 
-  .nav-link {
+  .nav-link, .nav-link:hover {
     height: 32px;
   }
 }

@@ -1,3 +1,9 @@
+/* Prevents swiping left and right away from the page on mobile devices */
+
+html {
+  overflow-x: hidden;
+}
+
 /* Get the font and style the body element */
 
 @font-face {
@@ -9,6 +15,7 @@ body {
   margin: 0px;
   font-family: Liberation Sans;
   background-color: black;
+  font-size: 16px;
 }
 
 /* Style the header, footer, and navbar */
@@ -146,12 +153,12 @@ main {
 /* Style text elements */
 
 h1 {
-  font-size: 36px;
+  font-size: 2.5em;
   margin: 0.5em 0 0.5em 0;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5em;
   margin: 0.8em 0 0.8em 0;
   color: #5a5a5a;
 }

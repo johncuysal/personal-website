@@ -271,5 +271,6 @@ a.project {
 
   .nav-link, .nav-link:hover {
     height: 32px;
+    padding: 8px;
   }
 }

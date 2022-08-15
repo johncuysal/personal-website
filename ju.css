@@ -1,7 +1,8 @@
-/* Prevents swiping left and right away from the page on mobile devices */
-
 html {
+  /* Mobile: Hides horizontal overflow so there's no swiping left and right away from the page */
   overflow-x: hidden;
+  /* Mobile: Maintains font-size whether in landscape or portrait mode but still allows zoom in/out */
+  -webkit-text-size-adjust: 100%;
 }
 
 /* Get the font and style the body element */

@@ -9,7 +9,7 @@ html {
 
 @font-face {
   font-family: Liberation Sans;
-  src: url(LiberationSans-Regular.ttf);
+  src: url(../fonts/LiberationSans-Regular.ttf);
 }
 
 body {
@@ -265,7 +265,20 @@ a.project {
 /* Provide background images for projects */
 
 #project-cc2022 {
-  background-image: url(project-cc2022.png);
+  background-image: url(../images/project-cc2022.png);
+}
+
+/* Long image that spans the width of the page */
+
+.long-image {
+  background-color: green;
+  width: 100%;
+  display: flex; /* Prevents bottom margin on image */
+}
+
+.long-image-logo {
+  width: 50%;
+  position: relative;
 }
 
 /* Adjust styles for smaller screens */

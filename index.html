@@ -48,7 +48,6 @@
 			</div>
 		</div>
 	</header>
-
 	<main>
 		<div id="content-container">
 			<div id="page-title">
@@ -59,7 +58,6 @@
 			<p>A designer, programmer, artist, animator, indie game developer, and web developer. Essentially, I make stuff! You're welcome to tour around this website and find out more about <a href="about">who I am</a> and <a href="projects">what I work on</a>. Thanks for stopping by!</p>
 		</div>
 	</main>
-	
 	<footer>
 		<div id="footer-content-container">© 2022 John C. Uysal</div>
 	</footer>
@@ -67,14 +65,13 @@
 		const homeIcon = document.getElementById("home-icon");
 
 		function randomizeHomeIconColor() {
-			var color = "#" + Math.floor(Math.random() * 16777216).toString(16);
-			homeIcon.style.color = color;
+			homeIcon.style.color = "#" + Math.floor(Math.random() * 16777216).toString(16);
 		}
 
 		function makeHomeIconWhite() {
 			homeIcon.style.color = "white";
 		}
-		
+
 		homeIcon.addEventListener("mouseover", randomizeHomeIconColor);
 		homeIcon.addEventListener("mouseout", makeHomeIconWhite);
 

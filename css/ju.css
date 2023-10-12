@@ -187,8 +187,6 @@ a:hover {
 .under-construction-notice {
   color: white;
   background-color: goldenrod;
-  display: flex;
-  justify-content: center;
   padding: 8px;
   border-radius: 16px;
 }
